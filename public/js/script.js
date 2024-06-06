@@ -80,6 +80,74 @@ const tweet1 = {
   }
   
   
+  // Functions
+// Defining functions
+function login(username, password) {
+  if (username == 'japhlett' && password == '1234') {
+    return 'User is logged in';
+  }else if (username != 'japhlett' && password != '1234') {
+    return 'Username and password is wrong'
+  } else if (username != 'japhlett') {
+    return 'Invalid username'
+  } else if (password != '1234') {
+    return 'Invalid password'
+  }  else {
+    return 'Invalid username or password!'
+  }
+}
+// Invoking functions
+login('japhlet', '1236');
+
+
+//Basic arithmetic
+12 + 34;
+85 - 8;
+7*4;
+45/4;
+25%5;
+
+
+// Comparison operators
+2 !== 2
+
+// Built in math functions
+Math.round(12/5);
+Math.floor(12/5);
+Math.ceil (12/5);
+Math.random ();
+Math.max(12, 14, 19, 3, 46,9)
+Math.floor(Math.random ()*1000000);
+
+
+// Order of operations
+// PEMDAS
+
+// handling user input
+1200 + Number('234l');
+
+name = 'japh' + 'let';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
