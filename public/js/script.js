@@ -128,7 +128,30 @@ Math.floor(Math.random ()*1000000);
 name = 'japh' + 'let';
 
 
+// String concatenation
+const firstname = 'Japhlet ';
+const lastname = 'Takyiwaa';
+firstname.trim() + ' ' + lastname.trim();
 
+// Template Literals
+`${firstname.trim()} ${lastname.trim()}`;
+
+// String Methods
+firstname.length; 
+//the length is not a method, it's a property that's why we 
+  //don't put the paranthesis after it)
+  
+lastname.length;
+
+firstname.toUpperCase();
+
+`${firstname.trim()} ${lastname.trim()}`;
+lastname.charAt(0);
+
+`${firstname.trim().charAt(0)}${lastname.trim().charAt(0)}`;
+
+// String conversion
+String(2014);
 
 
 
