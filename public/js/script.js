@@ -192,7 +192,11 @@ function addParticipant(email){
 addParticipant('japhlet@gmail.com');
 console.log(participants);
 
-
+// Arrays in javascript
+const alphabets = ['A', 'B', 'C', 'D'];
+alphabets;
+alphabets.join(' ');
+alphabets.join(' ').split(' ');
 
 
 
