@@ -154,9 +154,43 @@ lastname.charAt(0);
 String(2014);
 
 
+// write a that will add a participant to our google classroom
 
 
+//take the participants details
+function addParticipant(email){
+  // using a conditional statement to check the validity of the participant email
+  // if (email = True){
+  if (email = 'japhlett@gmail.com'){
+    return `${name} has been added`
+  } else{
+    return 'Participant could not be added'
+  }
+}
 
+// invoking the addParticipant function
+addParticipant ('japhlett@gmail.com', 'Japhlet')
+
+// write a that will add a participant to our google classroom
+const participants = [];
+function addParticipant(email){
+  // Check if email was provided
+  if (!email){
+    return 'Email not provided'
+  }
+  // Check if email is valid
+  if (!email.includes('@gmail.com')){
+    return 'Invalid email provided!'
+  }
+  // add email to the participants;
+  participants.push(email);
+  // Notify them via email
+  // return repsonse 
+  return 'Participant added!';  
+}
+
+addParticipant('japhlet@gmail.com');
+console.log(participants);
 
 
 
