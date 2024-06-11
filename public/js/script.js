@@ -243,6 +243,21 @@ const users = [
 // using mapping on the array of users
 users.map(fullname);
 
+// Map and return squares of numbers
+// function to square numbers
+function square(number){
+  return number**2;
+}
+const numbers = [0,1,2,3,4,5]
+numbers.map(square);
+
+// Filter and return even numbers
+function even(number){
+  return number%2 === 0;
+}
+
+numbers.filter(even);
+
 
 
 
