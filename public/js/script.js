@@ -198,6 +198,72 @@ alphabets;
 alphabets.join(' ');
 alphabets.join(' ').split(' ');
 
+// write a function that will take firstname, lastname and return fullname;
+
+function fullName(firstName, lastName) {
+  
+  // add first name to last name
+ const fullName = `Your full name is ${firstName} ${lastName}`;  
+ 
+ return fullName;
+}
+
+// invoking the function
+fullName('Japhlet', 'Takyiwaa');
+
+// write a function that will take a user with firstname, lastname and return fullname;
+
+const user = {
+ firstname:'Japhlet',
+ lastname:'Takyiwaa'
+}
+function fullname(user) {
+ return {
+   // transformation
+   // {the ...user means to spread the user i.e (the firstname, lastname)}
+   ...user, 
+   fullname: `${user.firstname} ${user.lastname}`
+ }
+}
+
+// calling the function
+fullname(user);
+
+
+// Array map
+const users = [
+ {firstname:'Linda', lastname:'Parker'},
+ {firstname:'Mark', lastname:'Twaine'},
+ {firstname:'Elsie', lastname:'Tani'},
+ {firstname:'Bridget', lastname:'Yankey'},
+ {firstname:'Thomas', lastname:'Sankara'}
+]
+
+
+// using mapping on the array of users
+users.map(fullname);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
