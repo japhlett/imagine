@@ -213,21 +213,21 @@ fullName('Japhlet', 'Takyiwaa');
 
 // write a function that will take a user with firstname, lastname and return fullname;
 
-const user = {
+const me = {
  firstname:'Japhlet',
  lastname:'Takyiwaa'
 }
-function fullname(user) {
+function fullname(me) {
  return {
    // transformation
    // {the ...user means to spread the user i.e (the firstname, lastname)}
-   ...user, 
-   fullname: `${user.firstname} ${user.lastname}`
+   ...me, 
+   fullname: `${me.firstname} ${me.lastname}`
  }
 }
 
 // calling the function
-fullname(user);
+fullname(me);
 
 
 // Array map
@@ -257,6 +257,48 @@ function even(number){
 }
 
 numbers.filter(even);
+
+
+// write a function that takes a user with name and date of birth and returns true if their birthday is today else false
+
+const user = {
+  name: 'Martin King',
+  dateOfBirth: '1990-06-12'
+}
+
+
+function isBirthday(user){
+  const today = new Date();
+ const birthDate = new Date(user.dateOfBirth);
+  console.log(birthDate.getMonth(),today.getMonth());
+  console.log(birthDate.getDate(), today.getMonth());
+  if (today.getMonth() === birthDate.getMonth() && today.getDate() === birthDate.getDate()) {
+    return true;
+  } else {
+    return false;
+  }
+
+}
+
+
+isBirthday(user);
+
+
+//write a function that takes a user with name and dateOfBirth and returns birthday with their if their birthday is today else return not your day
+
+function happyBirthday(user){
+  // using the isBirthday function
+  if (isBirthday(user)){
+    return `Happy birthday ${user.name}!`;
+  } else {
+    return 'Not your day!';
+  }
+}
+
+// calling function
+happyBirthday(user);
+
+
 
 
 
